@@ -2,9 +2,50 @@
 header{
     width: 100%;
     height: auto;
-    padding: 20px 0px;
+    padding: 10px 0px;
+}
+
+header h1{
+    line-height: 50px;
+}
+
+.header-tool-area{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:space-around;
     align-items: center;
+    padding: 20px 0px;
+}
+
+.header-tool-area_ip-address{
+    width: 250px;
+    padding: 5px;
+}
+
+.header-tool-area_ip-address form{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 5px;   
+}
+
+.header-tool-area_ip-address_filed{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header-tool-area_ip-address form input{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.header-tool-area_ip-address form input:focus {
+    background: #eee;
+}
+
+.submit-button_ip-addr{
+    width: 30px;
+    height: 30px;
 }
