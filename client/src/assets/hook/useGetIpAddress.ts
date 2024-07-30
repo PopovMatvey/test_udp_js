@@ -20,7 +20,7 @@ export function useGetRequestIpAddres() {
 
     useEffect(() => {
         featchIpAddres();
-    }, [])
+    }, [ipAddres])
 
-    return { ipAddres };
+    return { ipAddres, featchIpAddres};
 }

@@ -213,6 +213,7 @@ app.post(`${urlRequest}/send_udp_package`, (request, response) => {
 app.post(`${urlRequest}/ip_address`, (request, response) => {
     udpSoketObject.setIPAddr(request.body.ip_address);
     response.status(201).json("Текущий ip-адрес: " + udpSoketObject.getIPAddr());
+    console.log("Текущий ip-адрес: " + udpSoketObject.getIPAddr());
 });
 
 /*Директория*/
